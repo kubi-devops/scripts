@@ -1,0 +1,48 @@
+- name: david
+  amazon.aws.iam_user:
+    name: david
+    managed_policies:
+      - arn:aws:iam::aws:policy/AdminAccessPolicy
+    state: present
+
+- name: lisa
+  amazon.aws.iam_user:
+    name: lisa
+    managed_policies:
+      - arn:aws:iam::aws:policy/AdminAccessPolicy
+    state: present
+
+- name: henri
+  amazon.aws.iam_user:
+    name: henri
+    managed_policies:
+      - arn:aws:iam::aws:policy/AdminAccessPolicy
+    state: present
+
+- name: lou
+  amazon.aws.iam_user:
+    name: lou
+    managed_policies:
+      - arn:aws:iam::aws:policy/DevPolicy
+    state: present
+
+- name: emma
+  amazon.aws.iam_user:
+    name: emma
+    managed_policies:
+      - arn:aws:iam::aws:policy/DevPolicy
+    state: present
+
+- name: matilda
+  amazon.aws.iam_user:
+    name: matilda
+    managed_policies:
+      - arn:aws:iam::aws:policy/DevPolicy
+    state: present
+
+- name: roger
+  amazon.aws.iam_user:
+    name: roger
+    managed_policies:
+      - arn:aws:iam::aws:policy/OperationsPolicy
+    state: present
