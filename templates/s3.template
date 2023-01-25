@@ -1,0 +1,8 @@
+# Note: this playbook was auto-created from template: `s3_devops`
+
+- amazon.aws.s3_bucket:
+  name: {{ bucket_name}}
+  region: {{ region }}
+  policy: "{{ env }}_policy.json"
+  versioning: {% if env == "dev" %}false{% else %}true{% endif %}
+  encryption: {% if env == "dev" %}none{% else %}AES256{% endif %}
