@@ -1,0 +1,8 @@
+# Note: this playbook was auto-created from template: `s3_devops`
+
+- amazon.aws.s3_bucket:
+  name: Bjorn_s3
+  region: us-west-1
+  policy: "staging_policy.json"
+  versioning: true
+  encryption: AES256
