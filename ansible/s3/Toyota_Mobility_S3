@@ -1,0 +1,8 @@
+# Note: this playbook was auto-created from template: `s3_devops`
+
+- amazon.aws.s3_bucket:
+  name: Toyota_Mobility_S3
+  region: us-west-1
+  policy: "staging_policy.json"
+  versioning: true
+  encryption: AES256
